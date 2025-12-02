@@ -1,7 +1,75 @@
-echo "# Kelland.github.io" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Kelland9/Kelland.github.io.git
-git push -u origin main
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- PWA: App Install -->
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<header>
+    <div class="logo">Your App</div>
+    <div id="menu-btn">☰</div>
+</header>
+
+<nav id="mobile-menu">
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="section hero">
+    <h1>Welcome to Your App</h1>
+    <p>Your mobile-first website that feels like a real app.</p>
+</section>
+
+<section id="products" class="section">
+    <h2>Products</h2>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>Product 1</h3>
+            <p>Description of your product.</p>
+            <button onclick="buy('Product 1')">Buy Now</button>
+        </div>
+
+        <div class="card">
+            <h3>Product 2</h3>
+            <p>Description of another item.</p>
+            <button onclick="buy('Product 2')">Buy Now</button>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <h2>About</h2>
+    <p>Your business story goes here.</p>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact</h2>
+
+    <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+
+    <p id="formStatus"></p>
+</section>
+
+<footer>
+    <p>© 2025 Your App</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
